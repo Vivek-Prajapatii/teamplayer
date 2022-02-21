@@ -1,5 +1,7 @@
 A **REST** API tool for `Team` and `Player` built using Java **`SpringBoot`** and used the **`MySQL`** database to store the data with the help of Object Relational Mapping(ORM)-**`Hibernate`**
 
+Here we have two entities `Team` and `Player` and have `one-to-many` relationship.
+
 # Get Started
 
 ## Usage
@@ -50,7 +52,7 @@ localhost:9090/team/{teamId}
 
 **Delete Team** (DELETE)
 
-Let us now Delete the team 2 using the Delete method.
+Let us now Delete the team 2 using the `Delete` method.
 ```
 localhost:9090/team/{teamId}
 ```
@@ -108,9 +110,12 @@ localhost:9090/teams
 ```
 
 ## **Endpoints for Players**
-Everything remains the same as of the endpoints of team.
+
 
 **Create Player** (POST)
+
+To add a player first you need `teamId` i.e. in which team you want to add the player.
+
 ```
 localhost:9090/team/{teamId}/player
 ```
@@ -118,6 +123,8 @@ localhost:9090/team/{teamId}/player
 
 
 **FindById Player** (GET)
+
+You can get the data of any player by the below URL.
 ```
 localhost:9090/player/{playerId}
 ```
@@ -125,10 +132,12 @@ localhost:9090/player/{playerId}
 
 
 **Update Player** (PUT)
+
+From this endpoint you can update the data of the player by just giving the `playerId` as the pathVariable, by using the `PUT` method
 ```
 localhost:9090/player/{playerId}
 ```
-From this endpoint you can update the data of the player by just giving the `playerId` as the pathVariable, by using the `PUT` method
+
 
 Let's update the player 1's name from `Hardik` to `Krunal` and age from `28` to `29`.
 
@@ -144,10 +153,13 @@ The following is the result of the above operation.
 localhost:9090/player/{playerId}
 ```
 Deleteting the data of player 1 results in below output.
+
 ![Delete player](/src/main/resources/outputs/DeletePlayer.png?raw=true "Title")
 
 
 **List Player** (GET)
+
+Getting all the players from the Player Entity.
 ```
 localhost:9090/players
 ```
