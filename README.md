@@ -128,9 +128,9 @@ localhost:9090/player/{playerId}
 ```
 localhost:9090/player/{playerId}
 ```
-From thisendpoint you can u[date the data of the player by just giving the `playerId` as the pathVariable, by using the `PUT` method
+From this endpoint you can update the data of the player by just giving the `playerId` as the pathVariable, by using the `PUT` method
 
-Let's update the player 1's name and age from Hardik to Krunal. 
+Let's update the player 1's name from `Hardik` to `Krunal` and age from `28` to `29`.
 
 ![update player](/src/main/resources/outputs/updatePlayer.png?raw=true "Title")
 
