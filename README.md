@@ -116,25 +116,34 @@ localhost:9090/team/{teamId}/player
 ```
 ![Create player](/src/main/resources/outputs/Addplayer.png?raw=true "Title")
 
+
 **FindById Player** (GET)
 ```
 localhost:9090/player/{playerId}
 ```
 ![getPlayerById](/src/main/resources/outputs/getPlayerById.png?raw=true "Title")
 
+
 **Update Player** (PUT)
 ```
 localhost:9090/player/{playerId}
 ```
+From thisendpoint you can u[date the data of the player by just giving the `playerId` as the pathVariable, by using the `PUT` method
+
+Let's update the player 1's name and age from Hardik to Krunal. 
 
 ![update player](/src/main/resources/outputs/updatePlayer.png?raw=true "Title")
 
+The following is the result of the above operation.
+
 ![update player](/src/main/resources/outputs/updatePlayer1.png?raw=true "Title")
+
 
 **Delete Player** (DELETE)
 ```
 localhost:9090/player/{playerId}
 ```
+Deleteting the data of player 1 results in below output.
 ![Delete player](/src/main/resources/outputs/DeletePlayer.png?raw=true "Title")
 
 
@@ -142,4 +151,4 @@ localhost:9090/player/{playerId}
 ```
 localhost:9090/players
 ```
-![List Players](/src/main/resources/outputs/getPlayers.png?raw=true "Title")
+![List Players](/src/main/resources/outputs/getPlayers.png?raw=true "")
