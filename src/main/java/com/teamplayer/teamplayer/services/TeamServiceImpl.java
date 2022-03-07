@@ -1,13 +1,14 @@
 package com.teamplayer.teamplayer.services;
 
-import java.sql.*;
-import java.text.SimpleDateFormat;
+import java.sql.Date;
 import java.util.List;
+
 import com.teamplayer.teamplayer.dao.PlayerDao;
 import com.teamplayer.teamplayer.dao.TeamDao;
 import com.teamplayer.teamplayer.entities.Player;
 import com.teamplayer.teamplayer.entities.Result;
 import com.teamplayer.teamplayer.entities.Team;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
